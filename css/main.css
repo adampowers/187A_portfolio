@@ -9,6 +9,7 @@
 
 // End Variables
 
+
 // Other Definitions
 
 .rounded-corners (@radius: 5px) {
@@ -24,7 +25,6 @@
     
 }
 
-
  // End Other Definitions
 
 
@@ -36,7 +36,7 @@ body { background-color: @dark; color: @light; }
 .rightstripe { background-color: @red; position: relative; z-index: 2; }
 .content { background-color: @dark; position: relative; z-index: 2;}
 
-.leftstripe, .sidebar, .rightstripe, .content { height: 50em; }
+.leftstripe, .sidebar, .rightstripe, .content { height: 715px; }
 
 .title {
     .rotated;
@@ -51,16 +51,16 @@ body { background-color: @dark; color: @light; }
     width: 100%;
     padding-right: 10px;
     overflow: hidden;
- text-align: center;
- padding-left: 8px;
+    text-align: center;
+    padding-left: 8px;
     z-index: -1;
     }
     
 .title span {
-font-family: Myriad Pro, Vegur, Helvetica, Arial, sans serif;
-font-size: 3.5em;
-white-space: nowrap;
-}
+    font-family: Myriad Pro, Vegur, Helvetica, Arial, sans serif;
+    font-size: 3.5em;
+    white-space: nowrap;
+    }
     
 .tagline {
     font-family: "Myriad Pro", Vegur, Tahoma, Helvetica, sans;
@@ -72,11 +72,10 @@ white-space: nowrap;
     font-style: italic;
     text-align: justify;
     text-justify: newspaper;
-
-}
+    }
 
 .content {
-margin-top: 50px;    
+    margin-top: 50px;    
     }
     
 .navbox {
@@ -90,42 +89,47 @@ margin-top: 50px;
     font-family: "Myriad Pro", Vegur, Tahoma, Helvetica, sans;
     padding-top: 1em;
     padding-bottom: 1em; 
-}
+    }
 
 .navbox a { text-decoration: none; color: @light; }
 .navbox a:hover { color: @yellow; }
 
-.navbox span {
- font-size: 2em;    
-}
+.navbox span { font-size: 2em; }
 
-.navwrapper {
-    text-align: center;
-}
+.navwrapper { text-align: center; }
 .navimg { margin-bottom: 20px; }
 .powerimg { margin-left: -4px; }
 
 .footer {
-margin-left: 20px;
-margin-right: 20px;
-}
+    margin-left: 20px;
+    margin-right: 20px;
+    }
 
 .footer {
     position: absolute;
     bottom: 0;
     margin-bottom: 20px; 
-}
+    }
+
 .footer span {
-color: @dark;
-font-family: "Myriad Pro", Vegur, Tahoma, Helvetica, sans;
-font-weight: bold;
-font-size: 1.1em;
-vertical-align: top;
-white-space: nowrap;
-overflow: visible;
-}
+    color: @dark;
+    font-family: "Myriad Pro", Vegur, Tahoma, Helvetica, sans;
+    font-weight: bold;
+    font-size: 1.1em;
+    vertical-align: top;
+    white-space: nowrap;
+    overflow: visible;
+    }
+
 .footer span img { margin-right: 5px; }
 #fb { margin-left: 10px; }
+
 .footer * { vertical-align: middle; }
 .footer a { text-decoration: none; color: @dark; }
 .footer a:hover { color: @light; }
+
+h1, h2, h3 { color: @light;
+    font-family: "Myriad Pro", Vegur, Tahoma, Helvetica, sans;
+    }
+
+.fancytitle { width: 400px; }
