@@ -88,11 +88,15 @@ margin-top: 50px;
     margin-top: 50px;
     text-align: center;
     font-family: "Myriad Pro", Vegur, Tahoma, Helvetica, sans;
-    padding-top: .5em;
+    padding-top: 1em;
+    padding-bottom: 1em; 
 }
 
+.navbox a { text-decoration: none; color: @light; }
+.navbox a:hover { color: @yellow; }
+
 .navbox span {
- font-size: 3em;    
+ font-size: 2em;    
 }
 
 .navwrapper {
