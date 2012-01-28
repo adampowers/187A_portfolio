@@ -98,6 +98,8 @@ margin-top: 50px;
 .navwrapper {
     text-align: center;
 }
+.navimg { margin-bottom: 20px; }
+.powerimg { margin-left: -4px; }
 
 .footer {
 margin-left: 20px;
