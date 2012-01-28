@@ -1,0 +1,73 @@
+// Variables
+@dark:      #3c3c3c;
+@light:     #f6f7bd;
+@yellow:    #e6ac27;
+@blue:      #80bca3;
+@red:       #bf4d28;
+
+@gridGutterWidth: 15px;
+
+// End Variables
+
+// Other Definitions
+
+.rounded-corners (@radius: 5px) {
+  border-radius: @radius;
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+}
+
+// End Other Definitions
+
+
+body { background-color: @dark; color: @light; }
+
+
+.leftstripe { background-color: @blue; }
+.sidebar { background-color: @yellow; }
+.rightstripe { background-color: @red; }
+.content { background-color: @dark; }
+
+.leftstripe, .sidebar, .rightstripe, .content { height: 50em; }
+
+.title {
+    background-color: @dark;
+    color: @yellow;
+    font-family: 'Myriad Pro', Vegur, Tahoma, Helvetica, sans;
+    font-size: 3.5em;
+    margin-top: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: 15px;
+    text-align: center;
+    font-weight: bold;
+    }
+    
+.tagline {
+    font-family: "Myriad Pro", Vegur, Tahoma, Helvetica, sans;
+    color: @dark;
+    font-size: 1.7em;
+    margin: 0px 20px 0px 20px;
+    line-height: 110%;
+    font-weight: bold;
+    font-style: italic;
+    text-align: justify;
+    padding-top: 50px;
+}
+
+.content {
+margin-top: 50px;    
+    }
+    
+.navbox {
+    .rounded-corners;
+
+    background: @dark;
+    color: @light;
+    margin-top: 50px;
+}
+
+.navbox-wrapper img {
+    margin-left: 15px;
+    margin-right: 15px;
+}
