@@ -17,10 +17,10 @@
   -moz-border-radius: @radius;
 }
 
-.rotated (@degrees: -9.03) {
-    transform: rotate(-9.03deg);
-   -moz-transform: rotate(-9.03deg);
-   -webkit-transform: rotate(-9.03deg); 
+.rotated (@degrees: -9) {
+    transform: rotate(-8deg);
+   -moz-transform: rotate(-8deg);
+   -webkit-transform: rotate(-8deg); 
     
 }
 
@@ -31,31 +31,35 @@
 body { background-color: @dark; color: @light; }
 
 
-.leftstripe { background-color: @blue; position: relative; z-index: 2; }
-.sidebar { background-color: @yellow; position: relative; z-index: -1;  }
-.rightstripe { background-color: @red; position: relative; z-index: 2; }
-.content { background-color: @dark; position: relative; z-index: 2;}
+.leftstripe { background-color: @blue; position: relative; z-index: 1; }
+.sidebar { background-color: @yellow; position: relative; z-index: -1; }
+.rightstripe { background-color: @red; position: relative; z-index: 1; }
+.content { background-color: @dark; position: relative; z-index: 1;}
 
 .leftstripe, .sidebar, .rightstripe, .content { height: 50em; }
 
 .title {
+    .rotated;
     background-color: @dark;
     color: @yellow;
-    margin-top: 50px;
-    margin-left: auto;
-    text-align: center;
+    margin: 80px 0px 60px 0px;
+   
     font-weight: bold;
+    font-style: italic;
     padding-top: 1em;
-    padding-bottom: .5em;
-    width: 200%;
+    padding-bottom: .25em;
+    width: 100%;
+    padding-right: 10px;
     overflow: hidden;
-    .rotated;
+ text-align: center;
+ padding-left: 8px;
     z-index: -1;
     }
     
 .title span {
-font-family: 'Myriad Pro', Vegur, Tahoma, Helvetica, sans;
+font-family: Myriad Pro, Vegur, Helvetica, Arial, sans serif;
 font-size: 3.5em;
+white-space: nowrap;
 }
     
 .tagline {
@@ -68,7 +72,7 @@ font-size: 3.5em;
     font-style: italic;
     text-align: justify;
     text-justify: newspaper;
-    padding-top: 50px;
+
 }
 
 .content {
