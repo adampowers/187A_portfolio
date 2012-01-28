@@ -31,10 +31,10 @@
 body { background-color: @dark; color: @light; }
 
 
-.leftstripe { background-color: @blue; position: relative; z-index: 1; }
-.sidebar { background-color: @yellow; position: relative; z-index: -1; }
-.rightstripe { background-color: @red; position: relative; z-index: 1; }
-.content { background-color: @dark; position: relative; z-index: 1;}
+.leftstripe { background-color: @blue; position: relative; z-index: 2; }
+.sidebar { background-color: @yellow; position: relative; z-index: 1; }
+.rightstripe { background-color: @red; position: relative; z-index: 2; }
+.content { background-color: @dark; position: relative; z-index: 2;}
 
 .leftstripe, .sidebar, .rightstripe, .content { height: 50em; }
 
@@ -98,3 +98,28 @@ margin-top: 50px;
 .navwrapper {
     text-align: center;
 }
+
+.footer {
+margin-left: 20px;
+margin-right: 20px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 20px; 
+}
+.footer span {
+color: @dark;
+font-family: "Myriad Pro", Vegur, Tahoma, Helvetica, sans;
+font-weight: bold;
+font-size: 1.1em;
+vertical-align: top;
+white-space: nowrap;
+overflow: visible;
+}
+.footer span img { margin-right: 5px; }
+#fb { margin-left: 10px; }
+.footer * { vertical-align: middle; }
+.footer a { text-decoration: none; color: @dark; }
+.footer a:hover { color: @light; }
